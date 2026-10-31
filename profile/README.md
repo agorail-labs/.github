@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="../assets/agorail-mark.svg" alt="Agorail Labs logo" width="168" />
+</p>
+
 # Agorail Labs
 
 **Building the rails for trustworthy commerce.**
