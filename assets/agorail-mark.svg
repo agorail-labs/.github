@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Agorail Labs mark</title>
+  <desc id="desc">A geometric letter A crossed by two forward-moving commerce rails.</desc>
+  <defs>
+    <linearGradient id="back" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#0b2546"/><stop offset="1" stop-color="#071324"/></linearGradient>
+    <linearGradient id="legL" x1="0" y1="1" x2="1" y2="0"><stop stop-color="#235199"/><stop offset="1" stop-color="#6da8ed"/></linearGradient>
+    <linearGradient id="legR" x1="0" y1="1" x2="1" y2="0"><stop stop-color="#176bb4"/><stop offset="1" stop-color="#41cce8"/></linearGradient>
+    <linearGradient id="rail1" x1="0" y1="1" x2="1" y2="0"><stop stop-color="#285ab1"/><stop offset=".55" stop-color="#2f8cc9"/><stop offset="1" stop-color="#46d1e8"/></linearGradient>
+    <linearGradient id="rail2" x1="0" y1="1" x2="1" y2="0"><stop stop-color="#4d91db"/><stop offset="1" stop-color="#8ee8f2"/></linearGradient>
+  </defs>
+  <rect x="8" y="8" width="496" height="496" rx="104" fill="url(#back)"/>
+  <rect x="9.5" y="9.5" width="493" height="493" rx="102.5" fill="none" stroke="#2c4d69" stroke-width="3"/>
+  <path d="M97 397 194 140c10-28 28-40 57-40h35l-30 74h-12L174 397Z" fill="url(#legL)"/>
+  <path d="M259 100h28c27 0 43 12 53 39l93 258h-80L272 177Z" fill="url(#legR)"/>
+  <path d="M89 352c66-65 161-113 287-115l14 36c-106 0-191 39-246 124H91Z" fill="url(#rail1)"/>
+  <path d="M154 397c52-76 128-107 241-113l9 28c-96 4-161 33-200 85Z" fill="url(#rail2)"/>
+  <path d="M116 373c67-65 154-102 274-117" fill="none" stroke="#092746" stroke-opacity=".7" stroke-width="4"/>
+</svg>
