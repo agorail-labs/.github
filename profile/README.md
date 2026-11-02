@@ -14,8 +14,8 @@ We build experimental specifications, reference implementations, conformance tes
 
 | Project | Focus | Current maturity |
 | --- | --- | --- |
-| **[Subscription Change Quote (SCQ)](https://github.com/agorail-labs/subscription-change-quote)** | Quote → evaluate → commit → reconcile changes to existing subscriptions, including uncertainty about cost, timing, and final state. | Experimental protocol and reference implementation; v0.6.1 on the main branch, with v0.6.2 specification work under review. |
-| **[Mutation Safety Envelope (MSE)](https://github.com/agorail-labs/mutation-safety-envelope)** | A domain-blind safety contract for mutations to existing commercial state: bounded acceptance, admission against live state, per-unit outcomes, and effect finality. | Experimental v0.3.0 external-review candidate. |
+| **[Subscription Change Quote (SCQ)](https://github.com/agorail-labs/subscription-change-quote)** | Quote → evaluate → commit → reconcile changes to existing subscriptions, including uncertainty about cost, timing, and final state. | Experimental v0.6.2 protocol and simulator-backed reference package; release configuration prepared, with live-provider limitations disclosed. |
+| **[Mutation Safety Envelope (MSE)](https://github.com/agorail-labs/mutation-safety-envelope)** | A domain-blind safety contract for mutations to existing commercial state: bounded acceptance, admission against live state, per-unit outcomes, and effect finality. | Experimental v0.4 admission and dependency reference implementation; npm packaging prepared, with runtime guarantees limited to the stated model. |
 
 Both projects are **research and external-review candidates**, not production-certified systems or adopted industry standards. Read each repository's security considerations, test coverage, and evidence limitations before relying on its claims.
 
@@ -23,7 +23,7 @@ Both projects are **research and external-review candidates**, not production-ce
 
 SCQ addresses a **specific business domain**: changes to existing subscriptions across heterogeneous billing providers. MSE studies the **general safety boundary** for changes to commercial state across domains such as retail, travel, subscriptions, and contracts.
 
-Their design concerns overlap—quotes, acceptance constraints, commit uncertainty, and reconciliation—but they remain **separate specifications**. Neither project's existence establishes a validated integration, interchangeability, or conformance to the other. See [project scope and relationship](../PROJECTS.md).
+Their protocols remain **separate specifications**, but a [simulator-only MSE–SCQ integration](https://github.com/agorail-labs/subscription-change-quote/pull/57) now runs in cross-repository Node 20/22 CI. MSE performs read-only dependency admission; SCQ validates subscription-specific commercial effects and provides durable dispatch exclusion; a separate experimental bridge binds repeated quotes to one approved business intent. The demonstrated workflow includes a seat-change/addon dependency, replay after a fresh quote, failure-before-dispatch, and mock multi-unit outcomes. This is **not** provider-certified execution, general multi-unit atomicity, or proof of provider-side exactly-once effects. Both packages may be adopted independently; the bridge remains experimental. See [project scope and relationship](../PROJECTS.md).
 
 ## Areas of work
 
