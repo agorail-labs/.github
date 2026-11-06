@@ -4,6 +4,8 @@
 
 # Agorail Labs
 
+**Safety contracts for AI-driven commerce changes.**
+
 **Building the rails for trustworthy commerce.**
 
 Agorail Labs is an independent, open-source initiative exploring how commerce and payments systems can make proposed changes, authorization boundaries, execution outcomes, and downstream effects **explicit, verifiable, and interoperable**.
@@ -14,10 +16,35 @@ We build experimental specifications, reference implementations, conformance tes
 
 | Project | Focus | Current maturity |
 | --- | --- | --- |
-| **[Subscription Change Quote (SCQ)](https://github.com/agorail-labs/subscription-change-quote)** | Quote → evaluate → commit → reconcile changes to existing subscriptions, including uncertainty about cost, timing, and final state. | Experimental v0.6.2 protocol and simulator-backed reference package; release configuration prepared, with live-provider limitations disclosed. |
-| **[Mutation Safety Envelope (MSE)](https://github.com/agorail-labs/mutation-safety-envelope)** | A domain-blind safety contract for mutations to existing commercial state: bounded acceptance, admission against live state, per-unit outcomes, and effect finality. | Experimental v0.4 admission and dependency reference implementation; npm packaging prepared, with runtime guarantees limited to the stated model. |
+| **[Subscription Change Quote (SCQ)](https://github.com/agorail-labs/subscription-change-quote)** | Quote → evaluate → commit → reconcile changes to existing subscriptions, including uncertainty about cost, timing, and final state. | Experimental v0.6.2 protocol; simulator-backed reference package **published on npm**: [`@agorail-labs/scq-reference@0.6.2-experimental.1`](https://www.npmjs.com/package/@agorail-labs/scq-reference). Live-provider limitations disclosed in the repository. |
+| **[Mutation Safety Envelope (MSE)](https://github.com/agorail-labs/mutation-safety-envelope)** | A domain-blind safety contract for mutations to existing commercial state: bounded acceptance, admission against live state, per-unit outcomes, and effect finality. | Experimental v0.4 admission and dependency reference package **published on npm**: [`@agorail-labs/mse-reference@0.4.0-experimental.1`](https://www.npmjs.com/package/@agorail-labs/mse-reference). The repository source is a later, unreleased development revision — see the repository's "Two artifacts" note. |
 
 Both projects are **research and external-review candidates**, not production-certified systems or adopted industry standards. Read each repository's security considerations, test coverage, and evidence limitations before relying on its claims.
+
+## Watch the 92-second Agorail Demo
+
+**Agorail: What Happens When an AI Agent Changes a Subscription?** — every output shown is a real run of the published packages against simulators, captured in a clean consumer project. Nothing in the video is a live provider observation.
+
+[![Demo poster — what happens when an AI agent changes a subscription](../assets/demo/poster.png)](../assets/demo/agorail-demo-90s.mp4)
+
+- [Watch the full demo (MP4, 92 s, narrated)](../assets/demo/agorail-demo-90s.mp4) · [15-second silent preview](../assets/demo/agorail-preview-15s.mp4)
+- [Captions (WebVTT)](../assets/demo/captions.vtt) · [Narration transcript](../assets/demo/TRANSCRIPT.md)
+- [**Run the example yourself → Try Agorail in Five Minutes**](https://github.com/agorail-labs/subscription-change-quote/blob/main/docs/TRY-AGORAIL-IN-FIVE-MINUTES.md)
+
+*Experimental research software: MSE admission is not authorization, SCQ receipts are not provider execution guarantees, and no exactly-once or production-certified billing behavior is claimed. See each project's limitations before relying on any claim.*
+
+## Start here — five minutes
+
+One scenario runs through both projects: an AI agent is asked to raise a SaaS subscription from 100 to 120 seats, where the change requires a dependent add-on, changes recurring billing, and might time out after executing. The demonstrated path:
+
+```text
+proposed change ──► MSE admission ──► SCQ financial quote ──► separately authorized execution ──► receipt / reconciliation
+                    (is the set        (what will it cost,      (the caller's own policy —       (what actually happened;
+                     admissible?)       how strongly is          neither protocol grants         replay returns the receipt
+                                        it guaranteed?)          authorization)                  instead of re-dispatching)
+```
+
+[**Try Agorail in Five Minutes**](https://github.com/agorail-labs/subscription-change-quote/blob/main/docs/TRY-AGORAIL-IN-FIVE-MINUTES.md) — install the two published packages in a clean project and run the whole sequence against a simulator. No billing credentials, no real provider.
 
 ### How the projects relate
 
@@ -36,8 +63,8 @@ Their protocols remain **separate specifications**, but a [simulator-only MSE–
 
 We welcome independent technical criticism, counterexamples, tests, architecture discussion, and evidence from real integrations **when it can be shared responsibly**.
 
-1. Explore [SCQ](https://github.com/agorail-labs/subscription-change-quote) or [MSE](https://github.com/agorail-labs/mutation-safety-envelope) and review their stated limitations.
-2. Use the project's GitHub Issues for reproducible defects or specific proposals. Use Discussions where enabled for exploratory questions.
+1. Run [Try Agorail in Five Minutes](https://github.com/agorail-labs/subscription-change-quote/blob/main/docs/TRY-AGORAIL-IN-FIVE-MINUTES.md), then explore [SCQ](https://github.com/agorail-labs/subscription-change-quote) or [MSE](https://github.com/agorail-labs/mutation-safety-envelope) and review their stated limitations.
+2. Use the project's GitHub Issues for reproducible defects or specific proposals — both repositories provide *Independent evaluation* and *Integration feedback* issue templates, and the joint [independent review package](https://github.com/agorail-labs/subscription-change-quote/blob/main/docs/INDEPENDENT-MSE-SCQ-REVIEW.md) lists falsification questions worth testing. Use Discussions where enabled for exploratory questions.
 3. Read our [contribution guidelines](../CONTRIBUTING.md), [community expectations](../CODE_OF_CONDUCT.md), [security policy](../SECURITY.md), and [maintainership and decisions](../GOVERNANCE.md).
 
 For help choosing a place to raise a question, see [support and contact paths](../SUPPORT.md).
