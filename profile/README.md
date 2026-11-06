@@ -21,6 +21,16 @@ We build experimental specifications, reference implementations, conformance tes
 
 Both projects are **research and external-review candidates**, not production-certified systems or adopted industry standards. Read each repository's security considerations, test coverage, and evidence limitations before relying on its claims.
 
+## Watch the demo (90 seconds)
+
+**Agorail: What Happens When an AI Agent Changes a Subscription?** — every output shown is a real run of the published packages against simulators, captured in a clean consumer project.
+
+[![Demo poster — what happens when an AI agent changes a subscription](../assets/demo/poster.png)](../assets/demo/agorail-demo-90s.mp4)
+
+- [Watch the full demo (MP4, 92 s, narrated)](../assets/demo/agorail-demo-90s.mp4) · [15-second silent preview](../assets/demo/agorail-preview-15s.mp4)
+- Captions and transcript ship with the video's evidence record in the SCQ repository's launch materials.
+- [**Run the example yourself → Try Agorail in Five Minutes**](https://github.com/agorail-labs/subscription-change-quote/blob/main/docs/TRY-AGORAIL-IN-FIVE-MINUTES.md)
+
 ## Start here — five minutes
 
 One scenario runs through both projects: an AI agent is asked to raise a SaaS subscription from 100 to 120 seats, where the change requires a dependent add-on, changes recurring billing, and might time out after executing. The demonstrated path:
