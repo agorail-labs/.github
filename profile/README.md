@@ -28,7 +28,7 @@ Both projects are **research and external-review candidates**, not production-ce
 [![Demo poster — what happens when an AI agent changes a subscription](../assets/demo/poster.png)](../assets/demo/agorail-demo-90s.mp4)
 
 - [Watch the full demo (MP4, 92 s, narrated)](../assets/demo/agorail-demo-90s.mp4) · [15-second silent preview](../assets/demo/agorail-preview-15s.mp4)
-- [Captions (WebVTT)](../assets/demo/captions.vtt) · [Narration transcript](../assets/demo/TRANSCRIPT.md)
+- [Narration transcript](../assets/demo/TRANSCRIPT.md)
 - [**Run the example yourself → Try Agorail in Five Minutes**](https://github.com/agorail-labs/subscription-change-quote/blob/main/docs/TRY-AGORAIL-IN-FIVE-MINUTES.md)
 
 *Experimental research software: MSE admission is not authorization, SCQ receipts are not provider execution guarantees, and no exactly-once or production-certified billing behavior is claimed. See each project's limitations before relying on any claim.*
