@@ -1,0 +1,61 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:05.607
+An AI agent is told: increase our subscription from one hundred to one hundred twenty seats.
+
+2
+00:00:05.607 --> 00:00:14.688
+Simple, until three things go wrong: a required dependency is missing, the financial consequences are unclear, and the execution itself is uncertain.
+
+3
+00:00:14.988 --> 00:00:21.139
+The agent proposes the seat increase, but the required analytics entitlement is missing from the change.
+
+4
+00:00:21.139 --> 00:00:28.710
+MSE evaluates the whole set, read-only, before anything is dispatched, and refuses it, with a witness naming the missing add-on.
+
+5
+00:00:28.710 --> 00:00:32.318
+Include the add-on, and the complete change passes admission.
+
+6
+00:00:32.318 --> 00:00:36.636
+Admission is not authorization: it judges completeness, never permission.
+
+7
+00:00:36.936 --> 00:00:49.337
+Next, SCQ quotes the financial consequences before any mutation: an immediate effect of two hundred dollars, and a resulting recurring amount of twelve hundred dollars, each marked determined, not guessed.
+
+8
+00:00:49.337 --> 00:00:54.600
+A separate approval policy, the caller's own code, not the protocol, accepts the quote.
+
+9
+00:00:54.600 --> 00:01:00.408
+The change commits against the simulator, and the receipt records: committed, reconciliation OK.
+
+10
+00:01:00.708 --> 00:01:08.457
+After a restart, re-executing the same intent does not dispatch again: the durable coordinator replays the recorded receipt.
+
+11
+00:01:08.457 --> 00:01:10.332
+One dispatch, start to finish.
+
+12
+00:01:10.332 --> 00:01:20.580
+A lost provider response is a different case: the outcome is indeterminate, retry is refused, and reconciliation happens by observation, never by blind re-dispatch.
+
+13
+00:01:20.880 --> 00:01:22.456
+Try Agorail in five minutes.
+
+14
+00:01:22.456 --> 00:01:26.566
+The packages are on npm, and the quickstart needs no billing credentials.
+
+15
+00:01:26.566 --> 00:01:31.632
+Agorail is experimental research software: no production billing certification is claimed.
