@@ -1,7 +1,7 @@
 # Narration transcript — "Agorail: What Happens When an AI Agent Changes a Subscription?"
 
-Full video: `dist/agorail-demo-90s.mp4` (92.0 s, 1920×1080, narrated).
-Voice: synthesized (Helio), English. Captions: `dist/captions.vtt`
+Full video: [`agorail-demo-90s.mp4`](agorail-demo-90s.mp4) (92.0 s, 1920×1080, narrated).
+Voice: synthesized (Helio), English. Captions: [`captions.vtt`](captions.vtt)
 (15 cues, timed from the actual segment durations).
 
 ## 00:00–00:15 — The problem
