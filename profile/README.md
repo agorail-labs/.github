@@ -25,7 +25,7 @@ Both projects are **research and external-review candidates**, not production-ce
 
 **Agorail: What Happens When an AI Agent Changes a Subscription?** — every output shown is a real run of the published packages against simulators, captured in a clean consumer project. Nothing in the video is a live provider observation.
 
-https://github.com/user-attachments/assets/41968b11-403e-4999-bc59-5724fe5e642d
+https://github.com/user-attachments/assets/52396b48-0431-4c22-8233-06f17c878e87
 
 - [15-second silent preview](../assets/demo/agorail-preview-15s.mp4)
 - [Narration transcript](../assets/demo/TRANSCRIPT.md)
