@@ -4,8 +4,8 @@ Agorail Labs hosts independently reviewed experiments in trustworthy commerce an
 
 | Project | Scope | Current boundary |
 | --- | --- | --- |
-| [Subscription Change Quote (SCQ)](https://github.com/agorail-labs/subscription-change-quote) | A protocol-neutral lifecycle for quoting and committing **changes to existing subscriptions** across varied billing models. | SCQ v0.6.2 experimental specification published; simulator-backed reference package on npm as `@agorail-labs/scq-reference@0.6.2-experimental.1`. Experimental. Not a payment, payment-authorization, or subscription-creation protocol. |
-| [Mutation Safety Envelope (MSE)](https://github.com/agorail-labs/mutation-safety-envelope) | Domain-blind constraints and outcome reporting for mutations to existing commercial state, including multi-unit admission and reconciliation. | MSE v0.4 experimental reference package on npm as `@agorail-labs/mse-reference@0.4.0-experimental.1`; repository source is an unreleased development revision (0.4.0-dev.0) and is not the published artifact. Experimental. Does not define identity, payment authorization, settlement, or domain-specific resources. |
+| [Subscription Change Quote (SCQ)](https://github.com/agorail-labs/subscription-change-quote) | A protocol-neutral lifecycle for quoting and committing **changes to existing subscriptions** across varied billing models. | SCQ v0.6.2 experimental specification published; simulator-backed reference package on npm as `@agorail-labs/scq-reference@1.0.0-rc.2`. Experimental. Not a payment, payment-authorization, or subscription-creation protocol. |
+| [Mutation Safety Envelope (MSE)](https://github.com/agorail-labs/mutation-safety-envelope) | Domain-blind constraints and outcome reporting for mutations to existing commercial state, including multi-unit admission and reconciliation. | MSE v0.4 experimental reference package on npm as `@agorail-labs/mse-reference@1.0.0-rc.2`; repository source is a later development revision — see the repository's "Two artifacts" note. Experimental. Does not define identity, payment authorization, settlement, or domain-specific resources. |
 
 ## Shared engineering questions
 

@@ -16,8 +16,8 @@ We build experimental specifications, reference implementations, conformance tes
 
 | Project | Focus | Current maturity |
 | --- | --- | --- |
-| **[Subscription Change Quote (SCQ)](https://github.com/agorail-labs/subscription-change-quote)** | Quote → evaluate → commit → reconcile changes to existing subscriptions, including uncertainty about cost, timing, and final state. | Experimental v0.6.2 protocol; simulator-backed reference package **published on npm**: [`@agorail-labs/scq-reference@0.6.2-experimental.1`](https://www.npmjs.com/package/@agorail-labs/scq-reference). Live-provider limitations disclosed in the repository. |
-| **[Mutation Safety Envelope (MSE)](https://github.com/agorail-labs/mutation-safety-envelope)** | A domain-blind safety contract for mutations to existing commercial state: bounded acceptance, admission against live state, per-unit outcomes, and effect finality. | Experimental v0.4 admission and dependency reference package **published on npm**: [`@agorail-labs/mse-reference@0.4.0-experimental.1`](https://www.npmjs.com/package/@agorail-labs/mse-reference). The repository source is a later, unreleased development revision — see the repository's "Two artifacts" note. |
+| **[Subscription Change Quote (SCQ)](https://github.com/agorail-labs/subscription-change-quote)** | Quote → evaluate → commit → reconcile changes to existing subscriptions, including uncertainty about cost, timing, and final state. | Experimental v0.6.2 protocol; simulator-backed reference package **published on npm**: [`@agorail-labs/scq-reference@1.0.0-rc.2`](https://www.npmjs.com/package/@agorail-labs/scq-reference). Live-provider limitations disclosed in the repository. |
+| **[Mutation Safety Envelope (MSE)](https://github.com/agorail-labs/mutation-safety-envelope)** | A domain-blind safety contract for mutations to existing commercial state: bounded acceptance, admission against live state, per-unit outcomes, and effect finality. | Experimental v0.4 admission and dependency reference package **published on npm**: [`@agorail-labs/mse-reference@1.0.0-rc.2`](https://www.npmjs.com/package/@agorail-labs/mse-reference). The repository source is a later, unreleased development revision — see the repository's "Two artifacts" note. |
 
 Both projects are **research and external-review candidates**, not production-certified systems or adopted industry standards. Read each repository's security considerations, test coverage, and evidence limitations before relying on its claims.
 
@@ -25,7 +25,7 @@ Both projects are **research and external-review candidates**, not production-ce
 
 **Agorail: What Happens When an AI Agent Changes a Subscription?** — every output shown is a real run of the published packages against simulators, captured in a clean consumer project. Nothing in the video is a live provider observation.
 
-https://github.com/user-attachments/assets/41968b11-403e-4999-bc59-5724fe5e642d
+https://github.com/user-attachments/assets/52396b48-0431-4c22-8233-06f17c878e87
 
 - [15-second silent preview](../assets/demo/agorail-preview-15s.mp4)
 - [Narration transcript](../assets/demo/TRANSCRIPT.md)
